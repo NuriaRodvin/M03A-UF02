@@ -42,3 +42,8 @@ public class Perfil {
         return "Dato curioso: " + datosCuriosos.get(randomIndex);  // Retorna el dato curioso seleccionado
     }
 }
+
+
+
+
+
