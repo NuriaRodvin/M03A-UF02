@@ -42,3 +42,37 @@ public class Main {
 
             // Guardamos la opción ingresada por el usuario
             option = scanner.nextInt();
+
+            // Aquí decidimos qué hacer según la opción elegida
+            switch (option) {
+                case 1: // Opción 1: Mostrar la historia
+                    System.out.println("📖 Mi Historia:");
+                    System.out.println(myProfile.getFormattedStory());
+                    break;
+                case 2: // Opción 2: Mostrar hobbies y comidas favoritas
+                    System.out.println("🌟 Mis Favoritos:");
+                    System.out.println(myProfile.getFormattedFavorites());
+                    break;
+                case 3: // Opción 3: Mostrar un dato curioso
+                    System.out.println("🤔 Un Dato Curioso:");
+                    System.out.println(myProfile.getRandomFunFact());
+                    break;
+                case 4: // Opción 4: Mostrar todo el perfil
+                    System.out.println("📋 Todo Sobre Mí:");
+                    System.out.println(myProfile.getFormattedStory());
+                    System.out.println(myProfile.getFormattedFavorites());
+                    System.out.println(myProfile.getRandomFunFact());
+                    break;
+                case 5: // Opción 5: Salir del programa
+                    System.out.println("🚪 ¡Gracias por usar el programa! Adiós. 👋");
+                    break;
+                default: // Opción inválida (no debería pasar si validamos bien)
+                    System.out.println("⚠️ ERROR: Opción no válida, intenta de nuevo.");
+            }
+
+        } while (option != 5); // Repetimos mientras el usuario no elija salir
+
+        // Cerramos el Scanner para liberar recursos
+        scanner.close();
+    }
+}
