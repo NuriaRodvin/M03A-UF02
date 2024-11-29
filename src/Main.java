@@ -1,4 +1,7 @@
 // Importamos las clases necesarias para el programa
+//clase Main
+//clase perfil
+
 import java.util.Scanner; // Para leer lo que escribe el usuario
 import java.util.Arrays;  // Para manejar listas de datos como hobbies y comidas
 
